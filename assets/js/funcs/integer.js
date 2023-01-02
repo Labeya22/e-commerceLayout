@@ -12,3 +12,12 @@ export function sum (...data) {
 
     return sum
 }
+
+/**
+ * 
+ * @param {string|int} value 
+ * @returns {boolean}
+ */
+export function isInteger(value) {
+    return isNaN(value)
+}

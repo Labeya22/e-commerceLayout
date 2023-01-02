@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
-    <title>E-commerce</title>
+    <title>E-commerce - produit</title>
 </head>
 <body>
     
@@ -21,7 +21,7 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link ">Accueil</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
                     <li class="nav-item"><a href="product.html" class="nav-link active">Produit</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
@@ -156,12 +156,17 @@
 
     <script src="assets/vendor/typewriterjs/dist/core.js"></script>
 
-    <script type="text/javascript">
-        const instance = new Typewriter('#typewriter', {
-          strings: ['rapidement.', 'facilement.', 'simplement.'],
-          autoStart: true,
-          loop: true
-        });
+   
+    <script>
+        const t = document.querySelector("#typewriter")
+        if (t) {
+            const instance = new Typewriter('#typewriter', {
+                strings: ['rapidement.', 'facilement.', 'simplement.'],
+                autoStart: true,
+                loop: true
+              });
+        }
+      
       </script>
 
     <script src="assets/js/app.js" type="module"></script>
